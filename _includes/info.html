@@ -4,10 +4,6 @@
         <span class="subtitle">{{ section.subtitle }}</span>
     </h2>
     <ul class="news-list">
-        {% for post in site.posts limit:5 %}
-            <li class="news-item">
-                <a href="">{{ post.title }} <span>{{ post.content | truncate: 40 }}</span></a>
-            </li>
-        {% endfor %}
+        {{ content }}
     </ul>
 </section>

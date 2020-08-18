@@ -4,14 +4,14 @@
         <span class="subtitle">{{ section.subtitle }}</span>
     </h2>
     <ul class="staff-list">
-        {% for staff in site.data.staff %}
-            {% if staff.schedules %}
+        {% for member in section.staff %}
+            {% if member.schedules %}
             <li class="staff-item">
-                <p>{{ staff.name }}:</p>
+                <p>{{ member.name }}:</p>
                 <ul class="schedule-list">
-                    {% for schedule in staff.schedules %}
+                    {% for schedule in member.schedules %}
                         <li class="schedule-item">
-                            <p>{{ schedule.weekday }} {{ schedule.detail }} {{ schedule.time }}</p>
+                            <p>{{ schedule.weekday }} / {{ schedule.detail }} / {{ schedule.time }}</p>
                         </li>
                     {% endfor %}
                 </ul>
