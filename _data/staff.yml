@@ -1,0 +1,45 @@
+- name: 加藤
+  schedules: 
+    - weekday: 水
+      detail: 代休
+      time: 9:00~18:00
+
+    - weekday: 木
+      detail: 代休
+      time: 9:00~18:00
+- name: 加藤
+  schedules: 
+    - weekday: 水
+      detail: 代休
+      time: 9:00~18:00
+
+    - weekday: 木
+      detail: 代休
+      time: 9:00~18:00
+- name: 加藤
+  schedules: 
+    - weekday: 水
+      detail: 代休
+      time: 9:00~18:00
+
+    - weekday: 木
+      detail: 代休
+      time: 9:00~18:00
+- name: 加藤
+  schedules: 
+    - weekday: 水
+      detail: 代休
+      time: 9:00~18:00
+
+    - weekday: 木
+      detail: 代休
+      time: 9:00~18:00
+- name: 加藤
+  schedules: 
+    - weekday: 水
+      detail: 代休
+      time: 9:00~18:00
+
+    - weekday: 木
+      detail: 代休
+      time: 9:00~18:00

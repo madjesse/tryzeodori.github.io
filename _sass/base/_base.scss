@@ -1,0 +1,72 @@
+@import "normalize";
+@import "variables";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-size: $font-size-sm;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-light;
+    color: $color-primary;
+    letter-spacing: $letter-spacing-sm;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: $color-primary;
+    text-align: center;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2 {
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-lg;
+}
+h1 {
+    font-size: $font-size-lg;
+}
+h2 {
+    font-size: $font-size-md;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+p {
+    font-weight: $font-weight-light;
+    font-size: $font-size-sm;
+    margin-bottom: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.row {
+    width: 100%;
+}
+.col-md-6,
+.col-md-3,
+.col-lg-4 {
+    padding: 0 2rem;
+    margin-bottom: 4rem;
+    a {
+        height: 100%;
+    }
+}
+.en {
+    font-family: $font-family-secondary;
+}

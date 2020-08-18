@@ -1,0 +1,22 @@
+<section class="container schedule">
+    <h2 class="title">
+        {{ section.title }}
+        <span class="subtitle">{{ section.subtitle }}</span>
+    </h2>
+    <ul class="staff-list">
+        {% for staff in site.data.staff %}
+            {% if staff.schedules %}
+            <li class="staff-item">
+                <p>{{ staff.name }}:</p>
+                <ul class="schedule-list">
+                    {% for schedule in staff.schedules %}
+                        <li class="schedule-item">
+                            <p>{{ schedule.weekday }} {{ schedule.detail }} {{ schedule.time }}</p>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</section>

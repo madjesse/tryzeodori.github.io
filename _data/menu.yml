@@ -1,0 +1,10 @@
+- name: トップ
+  link: "#top"
+- name: 新着情報
+  link: "#news"
+- name: 掲示板
+  link: "#info"
+- name: 職員予定
+  link: "#schedule"
+- name: アクセス
+  link: "#access"
