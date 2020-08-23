@@ -12,13 +12,14 @@ html {
 }
 body {
     height: 100%;
-    font-size: $font-size-sm;
+    font-size: $font-size-sm-xs;
     font-family: $font-family-primary;
     font-weight: $font-weight-light;
-    color: $color-primary;
+    color: $color-dark;
     letter-spacing: $letter-spacing-sm;
 }
 a {
+    font-family: $font-family-primary;
     display: block;
     text-decoration: none;
     color: $color-primary;
