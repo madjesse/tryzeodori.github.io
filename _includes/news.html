@@ -1,13 +1,17 @@
-<section class="container news">
-    <h2 class="title">
-        {{ section.title }}
-        <span class="subtitle">{{ section.subtitle }}</span>
-    </h2>
-    <ul class="news-list">
-        {% for post in site.posts %}
-            <li class="news-item">
-                <a href="">{{ post.title }} <span>{{ post.content | truncate: 40 }}</span></a>
-            </li>
-        {% endfor %}
-    </ul>
+<section class="section pattern news">
+    <div class="container">
+        <h2 class="title">
+            <span class="maintitle">{{ section.title }}</span>
+            <span class="subtitle">{{ section.subtitle }}</span>
+        </h2>
+        <div class="content-container">
+            <ul class="news-list">
+                {% for post in site.posts %}
+                    <li class="item news-item">
+                        <a href="">{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </section>

@@ -1,0 +1,58 @@
+@import "../base/variables";
+@import "../base/base";
+
+.section {
+    margin: 0;
+    padding: 8rem 0;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+    position: relative;
+    p {
+        font-weight: $font-weight-normal;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6rem;
+    }
+    .content-container {
+        display: inline-block;
+    }
+    .item {
+        margin-bottom: 1.5rem;
+        a {
+            text-align: left;
+        }
+    }
+    .maintitle {
+        position: relative;
+        &::before, &::after {
+            content: "";
+            display: block;
+            width: 3rem;
+            height: 0.3rem;
+            background-color: $color-dark;
+            border-radius: 0.15rem;
+            position: absolute;
+            top: 50%;
+        }
+        &::before {
+            left: -6rem;
+        }
+        &::after {
+            right: -6rem;
+        }
+    }
+    .subtitle {
+        font-family: $font-family-secondary;
+        font-size: $font-size-sm;
+        display: block;
+        margin-top: 2rem;
+    }
+}

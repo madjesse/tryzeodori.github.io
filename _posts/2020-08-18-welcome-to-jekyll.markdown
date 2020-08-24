@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title: コロナの影響で、通所時間の変更について
 date:   2020-08-18 11:44:15 +0900
 categories: jekyll update
 ---

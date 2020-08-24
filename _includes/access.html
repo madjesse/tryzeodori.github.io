@@ -1,13 +1,13 @@
-<section class="container news">
-    <h2 class="title">
-        {{ section.title }}
-        <span class="subtitle">{{ section.subtitle }}</span>
-    </h2>
-    <ul class="news-list">
-        {% for post in site.posts limit:5 %}
-            <li class="news-item">
-                <a href="">{{ post.title }} <span>{{ post.content | truncate: 40 }}</span></a>
-            </li>
-        {% endfor %}
-    </ul>
+<section class="section bg-blue access">
+    <div class="container">
+        <h2 class="title">
+            <span class="maintitle">{{ section.title }}</span>
+            <span class="subtitle">{{ section.subtitle }}</span>
+        </h2>
+        <ul class="saturday-list">
+            {% for saturday in section.saturdays %}
+                <li class="item saturday-item">{{ saturday.date}} {{ saturday.detail }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </section>

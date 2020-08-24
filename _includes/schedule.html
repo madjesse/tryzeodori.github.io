@@ -1,22 +1,24 @@
-<section class="container schedule">
-    <h2 class="title">
-        {{ section.title }}
-        <span class="subtitle">{{ section.subtitle }}</span>
-    </h2>
-    <ul class="staff-list">
-        {% for member in section.staff %}
-            {% if member.schedules %}
-            <li class="staff-item">
-                <p>{{ member.name }}:</p>
-                <ul class="schedule-list">
-                    {% for schedule in member.schedules %}
-                        <li class="schedule-item">
-                            <p>{{ schedule.weekday }} / {{ schedule.detail }} / {{ schedule.time }}</p>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
+<section class="section pattern schedule">
+    <div class="container">
+        <h2 class="title">
+            <span class="maintitle">{{ section.title }}</span>
+            <span class="subtitle">{{ section.subtitle }}</span>
+        </h2>
+        <ul class="staff-list">
+            {% for member in section.staff %}
+                {% if member.schedules %}
+                <li class="staff-item">
+                    <p>{{ member.name }}:</p>
+                    <ul class="schedule-list">
+                        {% for schedule in member.schedules %}
+                            <li class="schedule-item">
+                                <p>{{ schedule.date }} {{ schedule.detail }} / {{ schedule.time }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </section>
