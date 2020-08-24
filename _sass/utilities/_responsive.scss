@@ -1,0 +1,41 @@
+@import "../base/variables";
+@import "../base/base";
+
+// xl
+@media (min-width: 1200px) {
+}
+// lg
+@media (min-width: 992px) {
+    .mobileonly {
+        display: none;
+    }
+}
+// md
+@media (min-width: 768px) {
+
+}
+// sm
+@media (min-width: 576px) {
+}
+// xs
+@media (max-width: 575px) {
+    // overall
+    .mobileonly {
+        display: block;
+    }
+    .maintitle {
+        font-size: $font-size-md-sm;
+    }
+    .subtitle {
+        font-size: $font-size-sm-xs!important;
+    }
+    p, li {
+        font-size: $font-size-sm-xs!important;
+    }
+    .col-md-6,
+    .col-md-3,
+    .col-lg-4 {
+        padding: 0 1rem!important;
+        margin-bottom: 2rem!important;
+    }
+}

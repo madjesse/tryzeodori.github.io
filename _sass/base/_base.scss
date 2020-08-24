@@ -11,12 +11,13 @@ html {
     height: 100%;
 }
 body {
-    height: 100%;
+    min-height: 100%;
     font-size: $font-size-sm-xs;
     font-family: $font-family-primary;
     font-weight: $font-weight-light;
     color: $color-dark;
     letter-spacing: $letter-spacing-sm;
+    background-color: $color-light;
 }
 a {
     font-family: $font-family-primary;
@@ -52,12 +53,9 @@ p {
     margin-bottom: 0;
 }
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     padding: 0;
-}
-.hidden {
-    display: none;
 }
 .row {
     width: 100%;
@@ -75,7 +73,7 @@ p {
     font-family: $font-family-secondary;
 }
 .bg-blue {
-    background-color: $color-secondary;
+    background-color: $color-primary;
     color: $color-light;
     .maintitle {
         &::before, &::after {

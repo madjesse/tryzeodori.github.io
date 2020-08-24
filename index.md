@@ -3,8 +3,8 @@ layout: home
 title: ホーム
 sections:
   - type: hero.html
-    title: メインイメージ
-    subtitle: Main Image
+    title: トライズ大通情報サイト
+    subtitle: 開所予定やイベント情報、就職に関する情報や施設についての情報などを発信しております
   - type: news.html
     title: 新着情報
     subtitle: News
@@ -53,6 +53,11 @@ sections:
   - type: access.html
     title: アクセス
     subtitle: Access
+    postcode: 〒060-0051     
+    address: 札幌市中央区南1条東2丁目 5-1 MⅡビル 5Ｆ
+    tel: 011-252-7660
+    fax: 011-252-7661
+    email: odori＠tryze.biz
 ---
 
 
