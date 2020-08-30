@@ -22,7 +22,7 @@ title: トライズ大通
 description: >- # this means to ignore newlines until "baseurl:"
   This is an info site for Tryze Odori. It is intended for internal use only.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "local:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tryzeodori.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 markdown: kramdown
 
