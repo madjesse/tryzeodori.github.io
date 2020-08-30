@@ -11,6 +11,7 @@ html {
     height: 100%;
 }
 body {
+    position: relative;
     min-height: 100%;
     font-size: $font-size-sm-xs;
     font-family: $font-family-primary;

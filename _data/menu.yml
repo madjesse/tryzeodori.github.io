@@ -1,6 +1,8 @@
 - name: ホーム
-  link: "#home"
+  link: "/"
 - name: 掲示板
-  link: "#info"
+  link: "info"
 - name: 求人情報
-  link: "#recruit"
+  link: "recruit"
+- name: 日報
+  link: "report"

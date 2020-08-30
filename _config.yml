@@ -19,20 +19,18 @@
 # in the templates via {{ site.myvariable }}.
 
 title: トライズ大通
-email: odori@tryze.biz
-tel: 011-252-7660
-access:
-  zipcode: 060-0051
-  address: 札幌市中央区南１条東２丁目5−1 M2ビル5F
 description: >- # this means to ignore newlines until "baseurl:"
   This is an info site for Tryze Odori. It is intended for internal use only.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "local:4000" # the base hostname & protocol for your site, e.g. http://example.com
+
+markdown: kramdown
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,14 +40,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

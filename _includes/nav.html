@@ -2,7 +2,7 @@
     <div class="container flex-row justify-content-between">
         <h1 class="navbar-brand">
             <a href="#top">
-                <img src="assets/images/logo-white.png" alt="就労支援トライズ大通ロゴ">
+                <img src="{{ site.url | append: '/assets/images/logo-white.png' }}" alt="就労支援トライズ大通ロゴ">
             </a>
         </h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -12,7 +12,7 @@
             <ul class="navbar-nav">
                 {% for item in site.data.menu %}
                     <li class="nav-item">
-                        <a href="{{ item.link }}" class="nav-link{% if item.name == page.title %} active{% endif %}">{{ item.name }}</a>
+                        <a href="{{ item.link | relative_url }}" class="nav-link{% if item.name == page.title %} active{% endif %}">{{ item.name }}</a>
                     </li>
                 {% endfor %}
                 <li class="nav-item mobileonly">
